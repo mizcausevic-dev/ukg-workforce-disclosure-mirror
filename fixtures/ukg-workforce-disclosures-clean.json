@@ -1,0 +1,66 @@
+{
+  "programs": [
+    {
+      "id": "WFD-5001",
+      "rollout": "Benefits portal notice refresh",
+      "population": "North America salaried workforce",
+      "platform": "UKG Pro",
+      "owner": "People Operations",
+      "status": "ON_TRACK",
+      "workflowHealthy": true,
+      "daysToReview": 4,
+      "packet": "Benefits disclosure and acknowledgment packet",
+      "excerpt": "All disclosure evidence is present and the workforce handoff packet is complete.",
+      "nextAction": "Hold for the scheduled workforce review signoff."
+    },
+    {
+      "id": "WFD-5002",
+      "rollout": "Regional manager policy refresh",
+      "population": "APAC managers",
+      "platform": "UKG Pro + Entra",
+      "owner": "Manager Enablement",
+      "status": "ON_TRACK",
+      "workflowHealthy": true,
+      "daysToReview": 6,
+      "packet": "Manager notice and attestation packet",
+      "excerpt": "Disclosure and acknowledgment evidence is complete across the manager cohort.",
+      "nextAction": "Keep the packet ready for audit follow-up."
+    }
+  ],
+  "packets": [
+    {
+      "id": "PKT-100",
+      "programId": "WFD-5001",
+      "rollout": "Benefits portal notice refresh",
+      "population": "North America salaried workforce",
+      "platform": "UKG Pro",
+      "owner": "People Operations",
+      "domain": "POLICY",
+      "kind": "Attestation",
+      "severity": "low",
+      "status": "RESOLVED",
+      "scope": "Disclosure packet",
+      "principal": "Policy completion proof",
+      "message": "Disclosure packet accepted at the last workforce-governance review.",
+      "openedAt": "2026-05-20T09:00:00Z",
+      "dueAt": "2026-05-27T17:00:00Z"
+    },
+    {
+      "id": "PKT-101",
+      "programId": "WFD-5002",
+      "rollout": "Regional manager policy refresh",
+      "population": "APAC managers",
+      "platform": "UKG Pro + Entra",
+      "owner": "Manager Enablement",
+      "domain": "MANAGER",
+      "kind": "Attestation",
+      "severity": "low",
+      "status": "RESOLVED",
+      "scope": "Manager review packet",
+      "principal": "Manager review completion proof",
+      "message": "Manager review packet accepted at the last governance checkpoint.",
+      "openedAt": "2026-05-21T09:00:00Z",
+      "dueAt": "2026-05-28T17:00:00Z"
+    }
+  ]
+}
